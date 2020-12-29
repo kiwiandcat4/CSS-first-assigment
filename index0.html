@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced CSS - Assignment 1</title>
+    <style>
+
+
+a[href^="https://www.google.com"] {
+    color:green
+}
+
+a[href^="https://www.google.com/doodles"] {
+    color:green
+}
+
+a[href^="https://www.link-group.eu"] {
+    color:red
+}
+
+/*#first-div>p:nth-child(2n+1){
+color:black
+}*/
+  
+#first-div>p::after {
+content:"-NEW";
+color:yellow;
+}
+
+#second-div>p:nth-child(n){
+    color:red
+}
+
+#second-div>p:nth-child(2n+1){
+    color:blue
+}
+
+#third-div>p:nth-last-child(n){
+    color:blue
+}
+
+
+#fourth-div>p:nth-last-child(n){
+    color:red
+}
+
+p:last-child:hover {
+    font-style:italic;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <h1>Main Heading</h1>
+    <p id="p1">Paragraph 1</p>
+    <a href="https://www.google.com/">Google</a>
+    <a href="https://www.google.com/doodles">Google Doodles</a>
+    <a href="https://www.link-group.eu/" target="_blank">Goto Link Group</a>
+    <div id="first-div">
+        <h2>Subheading</h2>
+        <p id="p2">Paragraph 2</p>
+        <p id="p3">Paragraph 3</p>
+        <div id="second-div">
+            <h3>Sub subheading</h3>
+            <p id="p4">Paragraph 4</p>
+            <p id="p5">Paragraph 5</p>
+            <p id="p6">Paragraph 6</p>
+            <p id="p7">Paragraph 7</p>
+            <p id="p8">Paragraph 8</p>
+        <div id="third-div">
+    <p id="p9">Paragraph 9</p>
+    <div id="fourth-div">
+    <p id="p10">Paragraph 10</p>
+</div>
+</body>
+
+</html>
