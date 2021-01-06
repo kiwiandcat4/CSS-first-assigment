@@ -18,7 +18,7 @@ body {
 	top:34vh;
 	left:64vh;
 	border-radius: 50%;
-	color: #0e791d;
+	color: #23499f;
 	animation: pulse 1.5s infinite;
 	z-index: 1;
 }
@@ -28,22 +28,22 @@ body {
 0%
 {
 	transform: scale(0.9);
-	box-shadow: 0 0 0 0 rgba(14, 121, 29,7);
+	box-shadow: 0 0 0 0 rgba(35, 73, 159,7);
 }
 40%
 {
 	transform: scale(1);
-	box-shadow: 0 0 0 30px rgba(14, 121, 29,0);
+	box-shadow: 0 0 0 30px rgba(35, 73, 159,0);
 }
 80%
 {
 	transform: scale(0.9);
-	box-shadow: 0 0 0 0 rgba(14, 121, 29,0);
+	box-shadow: 0 0 0 0 rgba(35, 73, 159,0);
 }
 100%
 {
 	transform: scale(1);
-	box-shadow: 0 0 0 0 rgba(14, 121, 29,7);
+	box-shadow: 0 0 0 0 rgba(35, 73, 159,7);
 }
 }
 
