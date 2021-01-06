@@ -9,6 +9,45 @@ body {
 
 }
 
+
+.pulse
+{
+	position: absolute;
+	width:120px;
+	height:120px;
+	top:34vh;
+	left:64vh;
+	border-radius: 50%;
+	color: #0e791d;
+	animation: pulse 1.5s infinite;
+	z-index: 1;
+}
+
+@keyframes pulse
+{
+0%
+{
+	transform: scale(0.9);
+	box-shadow: 0 0 0 0 rgba(14, 121, 29,7);
+}
+40%
+{
+	transform: scale(1);
+	box-shadow: 0 0 0 30px rgba(14, 121, 29,0);
+}
+80%
+{
+	transform: scale(0.9);
+	box-shadow: 0 0 0 0 rgba(14, 121, 29,0);
+}
+100%
+{
+	transform: scale(1);
+	box-shadow: 0 0 0 0 rgba(14, 121, 29,7);
+}
+}
+
+
 .circle {
 position: relative;
 width: 30vh;
@@ -71,4 +110,3 @@ filter:blur(20px);
 filter:blur(30px);
 
 }
-
